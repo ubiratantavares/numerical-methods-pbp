@@ -1,0 +1,4 @@
+Interpolação Polinomial
+Método de Newton Gregory
+Splines
+Método dos Quadrados Mínimos

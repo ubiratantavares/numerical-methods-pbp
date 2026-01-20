@@ -1,0 +1,2 @@
+Método de Newton
+Método de Broyden

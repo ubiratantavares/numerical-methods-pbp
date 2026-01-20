@@ -1,0 +1,3 @@
+Método da Bissecção e Falsa Posição
+Método Iterativo Linear
+Método de Newton

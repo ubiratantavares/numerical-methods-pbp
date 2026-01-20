@@ -1,0 +1,2 @@
+Métodos de Simpson e Trapézios
+Integração Dupla

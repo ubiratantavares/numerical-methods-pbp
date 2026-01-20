@@ -1,0 +1,23 @@
+[project]
+name = "numerical-methods-pbp"
+version = "0.1.0"
+description = "Applied Numerical Methods with Python (PBP approach)"
+authors = [
+    {name = "User", email = "user@example.com"},
+]
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "pandas",
+    "scipy",
+    "jupyter",
+]
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
