@@ -96,3 +96,57 @@ class AnalyticalMethod:
             'unique': unique,
             'details': details
         }
+
+    def solve(self, expression: sp.Expr, symbol: sp.Symbol) -> Dict[str, Any]:
+        """
+        Attempts to find the exact roots of the equation f(x) = 0 using analytical methods.
+
+        Args:
+            expression: The SymPy expression representing the function f(x).
+            symbol: The SymPy symbol variable (e.g., x).
+
+        Returns:
+            A dictionary containing:
+            - 'roots': List[sp.Expr] (List of exact roots found)
+            - 'is_polynomial': bool (True if the expression is a polynomial)
+            - 'degree': Optional[int] (Degree of the polynomial, if applicable)
+            - 'message': str (Information about the solution process)
+        """
+        is_polynomial = expression.is_polynomial(symbol)
+        degree = sp.degree(expression, symbol) if is_polynomial else None
+        
+        roots = []
+        message = ""
+
+        try:
+            # Attempt to solve the equation f(x) = 0
+            # SymPy's solve function returns a list of solutions
+            solutions = sp.solve(expression, symbol)
+            
+            # Filter solutions to ensure they are valid (sometimes solve returns empty or complex if not specified)
+            # We will return all found solutions, including complex ones, as they are "exact".
+            roots = solutions
+            
+            if is_polynomial:
+                if degree == 1:
+                    message = "Linear equation solved exactly (Euclides)."
+                elif degree == 2:
+                    message = "Quadratic equation solved exactly (Bhaskara/Sridhara)."
+                elif degree == 3:
+                    message = "Cubic equation solved exactly (Cardano/Tartaglia)."
+                elif degree == 4:
+                    message = "Quartic equation solved exactly (Ferrari)."
+                elif degree >= 5:
+                    message = "Polynomial of degree >= 5. Exact solutions might not exist (Abel-Ruffini). SymPy returned what it could find."
+            else:
+                message = "Non-polynomial equation. Exact solutions attempted."
+
+        except Exception as e:
+            message = f"Error attempting to solve analytically: {str(e)}"
+
+        return {
+            'roots': roots,
+            'is_polynomial': is_polynomial,
+            'degree': degree,
+            'message': message
+        }

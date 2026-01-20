@@ -63,3 +63,27 @@ Apresenta problemas que exigem solução analítica para comparação ou isolame
   * Exige manipulação algébrica e analítica de desigualdades.
 
 * **Exercício 2.7:** Provar um teorema relacionado à convergência (Teorema 2.5.1).
+
+## 7. Soluções Exatas (Histórico e Aplicação)
+
+Esta seção aborda a aplicação de métodos analíticos para encontrar a solução exata de equações polinomiais, quando possível.
+
+* **Equações Lineares (Euclides):**
+  * $ax + b = 0 \implies x = -b/a$
+  * Exemplo: $2x - 4 = 0 \implies x = 2$
+
+* **Equações Quadráticas (Bhaskara / Sridhara):**
+  * $ax^2 + bx + c = 0 \implies x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
+  * Exemplo: $x^2 - 5x + 6 = 0 \implies x = 2, x = 3$
+
+* **Equações Cúbicas (Cardano / Tartaglia):**
+  * Solução analítica para $ax^3 + bx^2 + cx + d = 0$.
+  * Exemplo: $x^3 - 6x^2 + 11x - 6 = 0 \implies x = 1, x = 2, x = 3$
+
+* **Equações Quárticas (Ferrari):**
+  * Redução para uma equação cúbica resolvente.
+  * Exemplo: $x^4 - 1 = 0 \implies x = \pm 1, x = \pm i$
+
+* **Limitações (Abel-Ruffini):**
+  * Para polinômios de grau $n \ge 5$, não existe fórmula geral por radicais.
+  * Exemplo: $x^5 - x - 1 = 0$ (Solução exata geral não garantida, requer métodos numéricos).

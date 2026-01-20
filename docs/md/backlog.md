@@ -53,19 +53,24 @@ Baseado no `roadmap_completo.md`, este documento serve como um guia de implement
 - Checklist
 
 - [ ] **Métodos de Localização e Isolamento**:
+
   - [x] Método Gráfico
   - [x] Método Analítico (Bolzano e Derivadas)
-  - [ ] Método Analítico (Solução Exata quando possível)
+  - [x] Método Analítico (Solução Exata quando possível)
   - [ ] Método de Tabelamento (Varredura)
   - [ ] Busca Incremental
   - [ ] Método das Tentativas (Força Bruta)
   - [ ] Isolamento de Raízes (Teorema de Bolzano)
+
 - [ ] **Métodos Intervalares**:
+
   - [ ] Bisseção (Dicotomia)
   - [ ] Falsa Posição (Regula Falsi)
   - [ ] Falsa Posição Modificado
   - [ ] Busca Incremental
+
 - [ ] **Métodos Abertos**:
+
   - [ ] Ponto Fixo (Iteração Linear)
   - [ ] Newton-Raphson
   - [ ] Secante
@@ -74,12 +79,16 @@ Baseado no `roadmap_completo.md`, este documento serve como um guia de implement
   - [ ] Halley
   - [ ] Wegstein
   - [ ] Schröder
+
 - [ ] **Métodos Híbridos**:
+
   - [ ] Brent
   - [ ] Ridders
   - [ ] Misto (Bissecção + Newton/Falsa Posição)
   - [ ] Interpolação Quadrática Inversa
+
 - [ ] **Métodos para Polinômios**:
+
   - [ ] Müller
   - [ ] Bairstow
   - [ ] Birge-Vieta (Newton para polinômios)
