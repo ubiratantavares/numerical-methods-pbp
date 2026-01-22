@@ -1,10 +1,12 @@
+# Roadmap Completo
+
 A seguir está um **roadmap completo, técnico e progressivo** para estudar **Métodos Numéricos em Python**, aplicando **POO, SOLID, Clean Code e MVC**, com foco em **engenharia de software científico** (não apenas matemática).
 
 A proposta forma você para:
 
 > construir **bibliotecas numéricas reutilizáveis, testáveis, extensíveis e profissionais**.
 
-# 📌 Pré-requisitos
+## 📌 Pré-requisitos
 
 Antes do Módulo 1:
 
@@ -14,7 +16,7 @@ Antes do Módulo 1:
 * Git + virtualenv
 * PyTest básico
 
-# 🏗 Arquitetura Base do Projeto
+## 🏗 Arquitetura Base do Projeto
 
 Estrutura padrão para TODOS os módulos:
 
@@ -31,7 +33,7 @@ numerical_methods/
 └── main.py
 ```
 
-# 🔹 MÓDULO 1 — Introdução aos Métodos Numéricos
+## 🔹 MÓDULO 1 — Introdução aos Métodos Numéricos
 
 ### Matemática
 
@@ -63,7 +65,7 @@ class NumericalMethod(ABC):
 ✔ Framework base para métodos numéricos
 ✔ Testes unitários de erro numérico
 
-# 🔹 MÓDULO 2 — Raízes de Equações
+## MÓDULO 2 — Raízes de Equações
 
 ### Métodos
 
@@ -91,12 +93,12 @@ class RootFinder(NumericalMethod):
 * Model representa equação
 * View exibe iterações
 
-### Entregável
+* Entregável
 
 ✔ Biblioteca extensível de métodos de raiz
 ✔ Comparador automático de convergência
 
-# 🔹 MÓDULO 3 — Sistemas Lineares e Não Lineares
+## MÓDULO 3 — Sistemas Lineares e Não Lineares
 
 ### Métodos
 
@@ -118,12 +120,12 @@ class LinearSystemSolver:
     def solve(self, matrix, vector): ...
 ```
 
-### Entregável
+* Entregável
 
 ✔ Motor de resolução matricial
 ✔ Detector automático de dominância diagonal
 
-# 🔹 MÓDULO 4 — Otimização
+## MÓDULO 4 — Otimização
 
 ### Métodos
 
@@ -149,7 +151,7 @@ class Optimizer:
 ✔ Biblioteca de otimização extensível
 ✔ Sistema de log de convergência
 
-# 🔹 MÓDULO 5 — Regressão, Interpolação e Ajuste
+## MÓDULO 5 — Regressão, Interpolação e Ajuste
 
 ### Métodos
 
@@ -176,7 +178,7 @@ class RegressionModel:
 ✔ Engine de ajuste de curvas
 ✔ Avaliação automática de erro
 
-# 🔹 MÓDULO 6 — Integração Numérica
+## MÓDULO 6 — Integração Numérica
 
 ### Métodos
 
@@ -201,7 +203,7 @@ class Integrator:
 
 ✔ Sistema de integração adaptativa
 
-# 🔹 MÓDULO 7 — EDOs
+## MÓDULO 7 — EDOs
 
 ### Métodos
 
@@ -227,7 +229,7 @@ class ODESolver:
 ✔ Solver genérico de EDOs
 ✔ Visualizador de solução
 
-# 🔹 MÓDULO 8 — EDPs
+## MÓDULO 8 — EDPs
 
 ### Métodos
 

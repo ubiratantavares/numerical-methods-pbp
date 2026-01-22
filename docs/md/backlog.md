@@ -57,10 +57,10 @@ Baseado no `roadmap_completo.md`, este documento serve como um guia de implement
   - [x] Método Gráfico
   - [x] Método Analítico (Bolzano e Derivadas)
   - [x] Método Analítico (Solução Exata quando possível)
-  - [ ] Método de Tabelamento (Varredura)
-  - [ ] Busca Incremental
-  - [ ] Método das Tentativas (Força Bruta)
-  - [ ] Isolamento de Raízes (Teorema de Bolzano)
+  - [x] Método de Tabelamento (Varredura)
+  - [x] Método de Busca Incremental
+  - [x] Método das Tentativas (Força Bruta)
+  - [x] Método de Isolamento de Raízes (Teorema de Bolzano)
 
 - [ ] **Métodos Intervalares**:
 

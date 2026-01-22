@@ -4,6 +4,7 @@ from src.algorithms.roots.graphical_method import GraphicalMethod
 from src.views.graphical_view import GraphicalView
 from src.algorithms.roots.analytical_method import AnalyticalMethod
 from src.views.analytical_view import AnalyticalView
+from src.algorithms.roots.table_method import TableMethod
 
 class RootsController:
     def __init__(self):
@@ -11,6 +12,7 @@ class RootsController:
         self.graphical_view = GraphicalView()
         self.analytical_method = AnalyticalMethod()
         self.analytical_view = AnalyticalView()
+        self.table_method = TableMethod()
 
     def plot_function(self, symbol: sp.Symbol, expression: sp.Expr, interval: Tuple[float, float], title: str = 'Graphical Method: Root Localization', label: Optional[str] = None):
         """
@@ -50,3 +52,11 @@ class RootsController:
         Returns True if a root exists in the interval, False otherwise.
         """
         self.analytical_view.display(result)
+
+    def find_bracketing_intervals(self, symbol: sp.Symbol, expression: sp.Expr, start: float, end: float, steps: int) -> Dict[str, Any]:
+        """
+        Uses the Table Method to find intervals that bracket roots.
+        """
+        print(f"Scanning interval [{start}, {end}] with {steps} steps...")
+        f_callable = sp.lambdify(symbol, expression, "numpy")
+        return self.table_method.solve(f_callable, start, end, steps)

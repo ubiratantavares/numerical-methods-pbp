@@ -1,8 +1,9 @@
 from typing import Tuple, Dict, Any, Optional
 import sympy as sp
 import numpy as np
+from src.interfaces.numerical_method import NumericalMethod
 
-class AnalyticalMethod:
+class AnalyticalMethod(NumericalMethod):
     """
     Implements the Analytical Method for root localization using Bolzano's Theorem
     and derivative analysis for uniqueness.
